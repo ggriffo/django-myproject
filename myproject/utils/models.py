@@ -9,7 +9,6 @@ from utils.models import MetaTagsMixin
 from django.contrib.sites.models import Site
 from django.config import settings
 
-@python_2_unicode_compatible
 class Idea(UrlMixin, CreationModificationMixin, MetaTagsMixin):
     title = models.CharField(_("Title"), max_length = 200)
     content = models.CharField(_("Content"))
